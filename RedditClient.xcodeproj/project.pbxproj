@@ -15,6 +15,7 @@
 		8B7F6F491E903A0100F8C609 /* RedditClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7F6F481E903A0100F8C609 /* RedditClientTests.swift */; };
 		8B7F6F541E903B6800F8C609 /* RedditPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7F6F531E903B6800F8C609 /* RedditPost.swift */; };
 		8B7F6F561E903C2300F8C609 /* RedditTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7F6F551E903C2300F8C609 /* RedditTableViewCell.swift */; };
+		8B7F6F581E903E5000F8C609 /* RedditLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7F6F571E903E5000F8C609 /* RedditLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		8B7F6F4A1E903A0100F8C609 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8B7F6F531E903B6800F8C609 /* RedditPost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedditPost.swift; sourceTree = "<group>"; };
 		8B7F6F551E903C2300F8C609 /* RedditTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedditTableViewCell.swift; sourceTree = "<group>"; };
+		8B7F6F571E903E5000F8C609 /* RedditLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedditLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 		8B7F6F321E903A0100F8C609 /* RedditClient */ = {
 			isa = PBXGroup;
 			children = (
+				8B7F6F571E903E5000F8C609 /* RedditLoader.swift */,
 				8B7F6F331E903A0100F8C609 /* AppDelegate.swift */,
 				8B7F6F351E903A0100F8C609 /* RedditViewController.swift */,
 				8B7F6F371E903A0100F8C609 /* Main.storyboard */,
@@ -207,6 +210,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B7F6F581E903E5000F8C609 /* RedditLoader.swift in Sources */,
 				8B7F6F361E903A0100F8C609 /* RedditViewController.swift in Sources */,
 				8B7F6F341E903A0100F8C609 /* AppDelegate.swift in Sources */,
 				8B7F6F541E903B6800F8C609 /* RedditPost.swift in Sources */,
