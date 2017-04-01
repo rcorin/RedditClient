@@ -6,6 +6,8 @@
 //  Copyright © 2017 Moonlighting. All rights reserved.
 //
 
+//  This class is in charge of displaying a given URL image for a Reddit post
+
 import UIKit
 
 class DisplayImageViewController: UIViewController {
@@ -31,11 +33,12 @@ class DisplayImageViewController: UIViewController {
     
 
     @IBAction func onClickSaveButton(_ sender: Any) {
-        UIImageWriteToSavedPhotosAlbum(imageView.image!, self, #selector(self.image(_:didFinishSavingWithError:contextInfo:)), nil)
+        UIImageWriteToSavedPhotosAlbum(imageView.image!, self, #selector(resultSaveImage(_:didFinishSavingWithError:contextInfo:)), nil)
         
         self.saveButton.isEnabled = false
     }
-    func image(_ image: UIImage, didFinishSavingWithError error: Error?, contextInfo: UnsafeRawPointer) {
+    
+    func resultSaveImage(_ image: UIImage, didFinishSavingWithError error: Error?, contextInfo: UnsafeRawPointer) {
         if let error = error {
             // we got back an error!
             let ac = UIAlertController(title: "Save error", message: error.localizedDescription, preferredStyle: .alert)

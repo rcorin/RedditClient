@@ -6,6 +6,8 @@
 //  Copyright © 2017 Moonlighting. All rights reserved.
 //
 
+//  Class for displaying and setting cells
+
 import UIKit
 
 class RedditTableViewCell: UITableViewCell {
@@ -58,6 +60,10 @@ class RedditTableViewCell: UITableViewCell {
     }
 
 }
+
+
+// extensions to TimeInterval to display '4h ago' format, and UIIMagevView and UIImage to download from URLs
+// Would go to a more general 'CommonExtensions' file in larger project
 
 extension TimeInterval {
     func format() -> String {

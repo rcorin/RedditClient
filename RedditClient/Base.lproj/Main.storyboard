@@ -13,7 +13,7 @@
         <!--RedditClient-->
         <scene sceneID="mM2-YZ-rih">
             <objects>
-                <tableViewController id="CaM-g4-tnD" customClass="RedditViewController" customModule="RedditClient" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="redditClientStoryBoardID" useStoryboardIdentifierAsRestorationIdentifier="YES" id="CaM-g4-tnD" customClass="RedditViewController" customModule="RedditClient" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="112" sectionHeaderHeight="28" sectionFooterHeight="28" id="Q7E-n5-g2G">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -32,8 +32,8 @@
                                             <color key="textColor" red="0.0" green="0.21077838556486128" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eJa-c1-t6D">
-                                            <rect key="frame" x="8" y="13" width="85" height="74"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eJa-c1-t6D">
+                                            <rect key="frame" x="8" y="13" width="85" height="85"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="85" id="IFq-2Y-VdU"/>
                                                 <constraint firstAttribute="width" constant="85" id="aCA-fJ-gJ3"/>
@@ -85,12 +85,12 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mwT-9k-SVR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2368.8000000000002" y="-242.42878560719643"/>
+            <point key="canvasLocation" x="2368.5" y="-242.5"/>
         </scene>
         <!--Image-->
         <scene sceneID="Mch-JJ-yUL">
             <objects>
-                <viewController id="rRq-oy-caT" customClass="DisplayImageViewController" customModule="RedditClient" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="displayImageViewControllerID" useStoryboardIdentifierAsRestorationIdentifier="YES" id="rRq-oy-caT" customClass="DisplayImageViewController" customModule="RedditClient" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Mdd-hI-OsC"/>
                         <viewControllerLayoutGuide type="bottom" id="8bk-lI-OCZ"/>
@@ -99,9 +99,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h3v-7E-7JP">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h3v-7E-7JP">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -125,7 +125,7 @@
         <!--Navigation Controller-->
         <scene sceneID="dFd-zy-Wla">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5Lv-Yz-NDg" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="navigationControllerStoryBoardID" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="5Lv-Yz-NDg" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="k7W-26-eZq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>

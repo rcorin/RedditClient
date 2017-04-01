@@ -6,12 +6,19 @@
 //  Copyright © 2017 Moonlighting. All rights reserved.
 //
 
+// A class for loading posts from reddit API, paginated
+
 import UIKit
 
-class RedditLoader: AnyObject {
+class RedditLoader: NSObject, NSCoding {
+    // keep track of last loaded page, for pagination
     private var after : String = ""
-    
-    
+
+    override init() {
+        after = ""
+    }
+
+    // load posts from Reddit top.json
     func loadNextPosts(_ completionHandler : @escaping ([RedditPost])->() ) {
         let urlString = String.init(format: "https://www.reddit.com/top.json?after=%@", after)
         
@@ -65,4 +72,16 @@ class RedditLoader: AnyObject {
         
     }
     
+    //MARK: - state restoration/preservation
+    struct PropertyKey {
+        static let after = "after"
+    }
+    
+    func encode(with aCoder: NSCoder){
+        aCoder.encode(after, forKey: PropertyKey.after)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        after = aDecoder.decodeObject(forKey: PropertyKey.after) as! String
+    }
 }
