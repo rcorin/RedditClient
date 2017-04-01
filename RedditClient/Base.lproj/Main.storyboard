@@ -23,7 +23,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="112"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aVr-hd-4nT" id="jem-Iv-ItS">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="112"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="111"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="title" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kza-I1-EFq">
@@ -46,7 +46,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="numberOfComments" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KrH-Po-hsv">
-                                            <rect key="frame" x="101" y="80" width="274" height="21"/>
+                                            <rect key="frame" x="101" y="71" width="274" height="21"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                             <color key="textColor" red="0.38711342636252805" green="0.39802734375000004" blue="0.38842071057755001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
@@ -56,7 +56,7 @@
                                         <constraint firstAttribute="trailing" secondItem="KrH-Po-hsv" secondAttribute="trailing" id="3eL-7I-Mfe"/>
                                         <constraint firstItem="kza-I1-EFq" firstAttribute="top" secondItem="jem-Iv-ItS" secondAttribute="top" constant="13" id="3gX-Km-aRt"/>
                                         <constraint firstAttribute="trailing" secondItem="1EN-cZ-jUK" secondAttribute="trailing" id="KOs-3o-qyQ"/>
-                                        <constraint firstItem="KrH-Po-hsv" firstAttribute="top" secondItem="1EN-cZ-jUK" secondAttribute="bottom" constant="8" id="LDm-nG-qO0"/>
+                                        <constraint firstItem="KrH-Po-hsv" firstAttribute="top" secondItem="1EN-cZ-jUK" secondAttribute="bottom" constant="1" id="LDm-nG-qO0"/>
                                         <constraint firstItem="kza-I1-EFq" firstAttribute="leading" secondItem="eJa-c1-t6D" secondAttribute="trailing" constant="8" id="P60-Rd-S1a"/>
                                         <constraint firstItem="eJa-c1-t6D" firstAttribute="top" secondItem="jem-Iv-ItS" secondAttribute="topMargin" constant="5" id="WbL-oy-oC1"/>
                                         <constraint firstAttribute="bottom" secondItem="KrH-Po-hsv" secondAttribute="bottom" constant="11" id="Z65-Gl-WMK"/>

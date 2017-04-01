@@ -11,7 +11,9 @@ import UIKit
 class RedditViewController: UITableViewController {
     private var posts : [ RedditPost ] = []
     private var redditLoader = RedditLoader()
+    private var isLoading = false
     
+    //MARK: TableView data source and delegate
     override func viewDidLoad() {
         super.viewDidLoad()
  
@@ -30,6 +32,20 @@ class RedditViewController: UITableViewController {
         
         return cell
     }
+
+    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        if indexPath.row>=posts.count-5 {
+            if !isLoading {
+                self.startLoading()
+                redditLoader.loadNextPosts { [weak self] newPosts in
+                    self?.posts.append(contentsOf: newPosts)
+                    self?.tableView.reloadData()
+                    self?.stopLoading()
+                }
+            }
+        }
+    }
+
     
     public override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return posts.count
@@ -41,6 +57,16 @@ class RedditViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    //MARK: auxiliary functions
+    func startLoading()
+    {
+        self.isLoading = true
+        UIApplication.shared.isNetworkActivityIndicatorVisible = true
+    }
+    func stopLoading()
+    {
+        self.isLoading = false
+        UIApplication.shared.isNetworkActivityIndicatorVisible = false
+    }
 }
 
