@@ -70,7 +70,7 @@
                                 <connections>
                                     <outlet property="commentsNumberLabel" destination="KrH-Po-hsv" id="T0h-Vz-xvT"/>
                                     <outlet property="postedByTimeAgoLabel" destination="1EN-cZ-jUK" id="yd8-C9-6KQ"/>
-                                    <outlet property="thumbImageViewLabel" destination="eJa-c1-t6D" id="quf-b4-oce"/>
+                                    <outlet property="thumbImageView" destination="eJa-c1-t6D" id="1TJ-N9-TBy"/>
                                     <outlet property="titleLabel" destination="kza-I1-EFq" id="FMP-R1-HYl"/>
                                 </connections>
                             </tableViewCell>

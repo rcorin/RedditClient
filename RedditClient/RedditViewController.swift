@@ -26,9 +26,8 @@ class RedditViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> RedditTableViewCell {
         let post = posts[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "RedditTableViewCellId", for: indexPath) as! RedditTableViewCell
-        cell.titleLabel.text = post.title
-        cell.postedByTimeAgoLabel.text = post.author
-        cell.commentsNumberLabel.text = String.init(describing: post.comments)
+        cell.post = post
+        
         return cell
     }
     
