@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B5500031E9058B700DC9FCE /* DisplayImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5500021E9058B700DC9FCE /* DisplayImageViewController.swift */; };
 		8B7F6F341E903A0100F8C609 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7F6F331E903A0100F8C609 /* AppDelegate.swift */; };
 		8B7F6F361E903A0100F8C609 /* RedditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7F6F351E903A0100F8C609 /* RedditViewController.swift */; };
 		8B7F6F391E903A0100F8C609 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B7F6F371E903A0100F8C609 /* Main.storyboard */; };
@@ -29,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7B5500021E9058B700DC9FCE /* DisplayImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayImageViewController.swift; sourceTree = "<group>"; };
 		8B7F6F301E903A0100F8C609 /* RedditClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RedditClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B7F6F331E903A0100F8C609 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8B7F6F351E903A0100F8C609 /* RedditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedditViewController.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 		8B7F6F321E903A0100F8C609 /* RedditClient */ = {
 			isa = PBXGroup;
 			children = (
+				7B5500021E9058B700DC9FCE /* DisplayImageViewController.swift */,
 				8B7F6F571E903E5000F8C609 /* RedditLoader.swift */,
 				8B7F6F331E903A0100F8C609 /* AppDelegate.swift */,
 				8B7F6F351E903A0100F8C609 /* RedditViewController.swift */,
@@ -211,6 +214,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B7F6F581E903E5000F8C609 /* RedditLoader.swift in Sources */,
+				7B5500031E9058B700DC9FCE /* DisplayImageViewController.swift in Sources */,
 				8B7F6F361E903A0100F8C609 /* RedditViewController.swift in Sources */,
 				8B7F6F341E903A0100F8C609 /* AppDelegate.swift in Sources */,
 				8B7F6F541E903B6800F8C609 /* RedditPost.swift in Sources */,
@@ -426,6 +430,7 @@
 				8B7F6F4F1E903A0100F8C609 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8B7F6F501E903A0100F8C609 /* Build configuration list for PBXNativeTarget "RedditClientTests" */ = {
 			isa = XCConfigurationList;
@@ -434,6 +439,7 @@
 				8B7F6F521E903A0100F8C609 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

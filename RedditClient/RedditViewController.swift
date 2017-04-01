@@ -51,6 +51,16 @@ class RedditViewController: UITableViewController {
         return posts.count
     }
     
+     // MARK: - Navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let cell = sender as? RedditTableViewCell {
+            if let destViewController = segue.destination as? DisplayImageViewController {
+                destViewController.urlString = cell.post?.imgUrl
+                destViewController.titleString = cell.post?.title
+            }
+        }
+     }
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

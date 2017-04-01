@@ -72,6 +72,7 @@
                                     <outlet property="postedByTimeAgoLabel" destination="1EN-cZ-jUK" id="yd8-C9-6KQ"/>
                                     <outlet property="thumbImageView" destination="eJa-c1-t6D" id="1TJ-N9-TBy"/>
                                     <outlet property="titleLabel" destination="kza-I1-EFq" id="FMP-R1-HYl"/>
+                                    <segue destination="rRq-oy-caT" kind="show" id="8av-No-OsF"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -85,6 +86,41 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mwT-9k-SVR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2368.8000000000002" y="-242.42878560719643"/>
+        </scene>
+        <!--Image-->
+        <scene sceneID="Mch-JJ-yUL">
+            <objects>
+                <viewController id="rRq-oy-caT" customClass="DisplayImageViewController" customModule="RedditClient" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Mdd-hI-OsC"/>
+                        <viewControllerLayoutGuide type="bottom" id="8bk-lI-OCZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rRb-lP-J8j">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h3v-7E-7JP">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Image" id="f5q-vm-xkF">
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="8N4-dp-tm9">
+                            <connections>
+                                <action selector="onClickSaveButton:" destination="rRq-oy-caT" id="S0h-dl-a68"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="imageView" destination="h3v-7E-7JP" id="bGG-cd-w8H"/>
+                        <outlet property="saveButton" destination="8N4-dp-tm9" id="CGa-3s-r6a"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GYo-Gg-ZiZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3312.8000000000002" y="-242.42878560719643"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="dFd-zy-Wla">
