@@ -19,7 +19,8 @@ class RedditViewController: UITableViewController {
             self?.posts.append(contentsOf: newPosts)
             self?.tableView.reloadData()
         }
-
+        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.estimatedRowHeight = 140
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> RedditTableViewCell {
