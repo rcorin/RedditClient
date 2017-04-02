@@ -56,5 +56,32 @@ class DisplayImageViewController: UIViewController {
             imageView.downloadedFrom(link: urlString, contentMode: .scaleAspectFit)
         }
     }
+    
+    //MARK: state restoration/preservation
+    struct PropertyKey {
+        static let urlString = "urlString"
+        static let titleString = "titleString"
+    }
+
+    override func encodeRestorableState(with coder: NSCoder) {
+        coder.encode(urlString, forKey: PropertyKey.urlString)
+        coder.encode(titleString, forKey: PropertyKey.titleString)
+        super.encodeRestorableState(with: coder)
+    }
+    
+    override func decodeRestorableState(with coder: NSCoder) {
+        super.decodeRestorableState(with: coder)
+        if let savedTitle = coder.decodeObject(forKey: PropertyKey.titleString) as? String {
+            titleString = savedTitle
+            self.title = titleString
+            
+        }
+        if let savedUrl = coder.decodeObject(forKey: PropertyKey.urlString) as? String {
+            urlString = savedUrl
+            loadImage()
+        }
+        
+    }
+
    
 }
